@@ -9,7 +9,7 @@ export default function Articles() {
     { id: 1, title: t("arttit1"), text: t("arttex1"), img: "/images/vv.png" },
     { id: 2, title: t("arttit2"), text: t("arttex2"), img: "/images/fd.png" },
     { id: 3, title: t("arttit3"), text: t("arttex3"), img: "/images/vf.png" },
-    { id: 4, title: t("arttit4"), text: t("arttex4"), img: "/images/hv.png" },
+    { id: 4, title: t("arttit4"), text: t("arttex4"), img: "/images/bh.png" },
     { id: 5, title: t("arttit5"), text: t("arttex5"), img: "/images/vg.png" },
     { id: 6, title: t("arttit6"), text: t("arttex6"), img: "/images/hv.png" },
   ];

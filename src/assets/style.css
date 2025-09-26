@@ -354,6 +354,11 @@ section .title::after {
   width: 150px;
 }
 
+.navbar .max-width .logo a {
+  display: flex;
+  align-items: center;
+}
+
 .flag-button {
       display: flex;
       align-items: center;
@@ -1659,11 +1664,6 @@ ul {
     font-size: 25px;
     font-weight: bold;
     color: var(--second-color);
-  }
-
-  
-  .navbar .max-width .logo a {
-    display: flex;
   }
 
   .logo{

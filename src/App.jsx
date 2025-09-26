@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <CookieBanner />
       <ScrollUpButton />
-      <ScrollToTop />   {/* ← Ajout ici */}
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
