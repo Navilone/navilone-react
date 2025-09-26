@@ -5,10 +5,12 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import CookieBanner from "./components/CookieBanner";
 import ScrollUpButton from "./components/ScrollUpButton";
+import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 
 // Sections de la page d’accueil
 import Home from "./components/Home";
+import Values from "./components/Values";
 import Services from "./components/Services";
 import Articles from "./components/Articles";
 import Contact from "./components/Contact";
@@ -24,15 +26,16 @@ function App() {
       <Navbar />
       <CookieBanner />
       <ScrollUpButton />
-
+      <ScrollToTop />   {/* ← Ajout ici */}
       <Routes>
         <Route
           path="/"
           element={
             <>
               <Home />
-              <Services />
+              <Values />
               <Articles />
+              <Services />
               <Contact />
               <Logos />
             </>

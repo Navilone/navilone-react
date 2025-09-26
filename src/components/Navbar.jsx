@@ -56,13 +56,6 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <div
-          className={`menu-btn ${menuOpen ? "active" : ""}`}
-          onClick={toggleMenu}
-        >
-          <i className="fas fa-bars"></i>
-        </div>
-
         <div className="trad-button">
           <button
             onClick={() => setLang("en")}
@@ -76,6 +69,13 @@ export default function Navbar() {
           >
             🇫🇷 FR
           </button>
+        </div>
+
+        <div
+          className={`menu-btn ${menuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <i className="fas fa-bars"></i>
         </div>
       </div>
     </nav>

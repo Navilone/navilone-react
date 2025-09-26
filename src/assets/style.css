@@ -288,7 +288,7 @@ section .title::after {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 20px 0;
   transition: all 0.3s ease;
 }
 
@@ -354,11 +354,6 @@ section .title::after {
   width: 150px;
 }
 
-
-.navbar .max-width .logo {
-  display: flex;
-}
-
 .flag-button {
       display: flex;
       align-items: center;
@@ -378,7 +373,7 @@ section .title::after {
   }
 
 .flag-button:active{
-      transform: scale(0.8);
+      transform: scale(0.95);
   }
 
 
@@ -491,11 +486,12 @@ section .title::after {
 .home .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2 {
+.home .max-width .home-content p {
   font-size: 75px;
   font-weight: 600;
-  margin-left: -3px;
+  text-transform: uppercase;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
@@ -605,6 +601,13 @@ section .title::after {
 
 
 /* Wrapper en desktop */
+
+.articles{
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"%3E%3Cpath fill="none" stroke="%235078c0" stroke-width="4" stroke-linecap="round" d="M0 50 Q 120 0, 240 50 T 480 50 T 720 50 T 960 50 T 1200 50 T 1440 50" /%3E%3Cpath fill="none" stroke="%2397B9DB" stroke-width="3" stroke-linecap="round" d="M0 70 Q 120 20, 240 70 T 480 70 T 720 70 T 960 70 T 1200 70 T 1440 70" /%3E%3Cpath fill="none" stroke="%235078c0" stroke-width="2" stroke-linecap="round" d="M0 30 Q 120 80, 240 30 T 480 30 T 720 30 T 960 30 T 1200 30 T 1440 30" /%3E%3C/svg%3E');
+  background-size: cover;
+  background-position: center;
+}
+
 .articles-wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -712,6 +715,7 @@ section .title::after {
   padding-bottom: 100px ;
   background: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="none" stroke="%235078c0" stroke-width="4" d="M0,160 C120,120 240,200 360,240 C480,280 600,320 720,280 C840,240 960,160 1080,120 C1200,80 1320,40 1440,80 L1440,320 L0,320 Z" /%3E%3Cpath fill="none" stroke="%2397B9DB" stroke-width="3" d="M0,240 C160,160 320,80 480,120 C640,160 800,240 960,200 C1120,160 1280,80 1440,120 L1440,320 L0,320 Z" /%3E%3C/svg%3E') no-repeat center center;
   background-size: cover;
+  margin-top: 50px;
 }
 
 .wrapper h2 {
@@ -1656,6 +1660,19 @@ ul {
     font-weight: bold;
     color: var(--second-color);
   }
+
+  
+  .navbar .max-width .logo a {
+    display: flex;
+  }
+
+  .logo{
+    background: linear-gradient(135deg, rgba(0,0,0,.28), rgba(0,0,0,.12));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom-left-radius: 12px;
+  }
+  
   .home .home-content .text-2 {
     font-size: 70px;
   }

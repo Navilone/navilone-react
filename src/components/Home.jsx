@@ -24,7 +24,8 @@ export default function Home() {
     <section className="home" id="home">
       <div className="max-width">
         <div className="home-content">
-          <h1>{t("welcome")} NAVILONE</h1>
+          <h1>{t("welcome")}</h1>
+          <p>Navilone</p>
           <h2>{t("expert")}</h2>
           <div>
             <span className="typing"></span>

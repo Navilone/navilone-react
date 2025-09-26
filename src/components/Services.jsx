@@ -4,36 +4,52 @@ export default function Services() {
   const { t } = useLanguage();
 
   return (
-    <section className="services" id="apropos">
-      <div className="max-width">
-        <h2 className="title">{t("valtitle")}</h2>
-        <h3>{t("valtitle2")}</h3>
-
-        <div className="serv-content">
-          <div className="card">
-            <div className="box">
-              <i className="fas fa-paint-brush"></i>
-              <div className="text">{t("val1tit")}</div>
-              <p>{t("val1tex")}</p>
+    <section className="wrapper" id="services">
+      <h2 className="title">{t("servtitle")}</h2>
+      <div className="slide">
+        <input type="radio" name="slide" id="c1" defaultChecked />
+        <label htmlFor="c1" className="slider">
+          <div className="line">
+            <div className="icon">1</div>
+            <div className="description">
+              <h4>{t("servtitle1")}</h4>
+              <p>{t("servp1")}</p>
             </div>
           </div>
+        </label>
 
-          <div className="card">
-            <div className="box">
-              <i className="fas fa-chart-line"></i>
-              <div className="text">{t("val2tit")}</div>
-              <p>{t("val2tex")}</p>
+        <input type="radio" name="slide" id="c2" />
+        <label htmlFor="c2" className="slider">
+          <div className="line">
+            <div className="icon">2</div>
+            <div className="description">
+              <h4>{t("servtitle2")}</h4>
+              <p>{t("servp2")}</p>
             </div>
           </div>
+        </label>
 
-          <div className="card">
-            <div className="box">
-              <i className="fas fa-code"></i>
-              <div className="text">{t("val3tit")}</div>
-              <p>{t("val3tex")}</p>
+        <input type="radio" name="slide" id="c3" />
+        <label htmlFor="c3" className="slider">
+          <div className="line">
+            <div className="icon">3</div>
+            <div className="description">
+              <h4>{t("servtitle3")}</h4>
+              <p>{t("servp3")}</p>
             </div>
           </div>
-        </div>
+        </label>
+
+        <input type="radio" name="slide" id="c4" />
+        <label htmlFor="c4" className="slider">
+          <div className="line">
+            <div className="icon">4</div>
+            <div className="description" id="contact">
+              <h4>{t("servtitle4")}</h4>
+              <p>{t("servp4")}</p>
+            </div>
+          </div>
+        </label>
       </div>
     </section>
   );
